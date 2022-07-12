@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./image/icon/logo2.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Trang chủ</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header_top">
+          <div class="container">
+            <div class="row topbar">
+              <div class="col l-6">
+                <div class="hotline">
+                  <i>
+                    <img src="./image/icon/i_phone.webp" alt="" />
+                  </i>
+                  <p>Hotline: <a href="#">0328543458</a></p>
+                </div>
+              </div>
+              <div class="col l-6">
+                <div class="cartsearch">
+                  <div class="search">
+                    <span>
+                      <i><img src="./image/icon/i_search.webp" alt="Search" /></i>
+                      Tìm kiếm
+                    </span>
+                    <form action="search" class="search_box">
+                      <input type="text" placeholder="Tìm kiếm" />
+                      <button><i class="material-icons"> search </i></button>
+                    </form>
+                    </form>
+                  </div>
+                  <div class="acccout">
+                    <span>
+                      <i><img src="./image/icon/i_user.webp" alt="Accout"></i>
+                      Tài khoản
+                    </span>
+                    <div class="acccout-group">
+                      <a href="./login.html">Đăng nhập</a>
+                      <a href="./register.html">Đăng kí</a>
+                    </div>
+                  </div>
+                  <div class="cart">
+                    <div class="cart_hotline">
+                      
+                      <i>
+                        <a href="./cart.html"><img src="./image/icon/i_cart.webp" alt="Cart">
+                        <span class="cart-accout">0</span></a>
+                      </i>
+                      Giỏ hàng
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_bottom">
+          <div class="container bottom_mobie">
+            <div class="menu"> <i class="material-icons"> menu </i></div>
+            <div class="bottombar">
+              <nav class="navbar">
+                <div class="login_mobie">
+                  <div>
+                    <a href="./register.html">
+                      <span>Đăng kí</span>
+                    </a>
+                    &nbsp;/
+                    <a href="./login.html">
+                      <span>Đăng nhập</span>
+                    </a>
+                  </div>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navbar_item">
+                  <li class="navbar_item-link">
+                    <a href="./home.html">Trang chủ</a>
+                  </li>
+                  <li  class="navbar_item-link">
+                    <a href="./introduce.html">Giới thiệu</a>
+                  </li>
+                  <li class="item_list navbar_item-link">
+                    <a href="#">Sản phẩm 
+                      <i class="material-icons"> arrow_drop_down</i>
+                      <!-- <i class="fa-light fa-plus"></i> -->
+                    </a>
+                    <ul class="item-small">
+                      <li>
+                        <a class="item-small_link" href="#">Cà phê</a>
+                      </li>
+                      <li>
+                        <a  class="item-small_link" href="#">Bánh ngọt</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Smoothies</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Trà hoa quả</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Sinh tố</a>
+                      </li>
+                    </ul>   
+                  </li>
+                </ul>
+                <ul class="logo">
+                  <li>
+                    <a href="home.html">
+                      <img src="./image/icon/logo.webp" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <ul  class="navbar_item">
+                  <li class="navbar_item-link  rr">
+                    <a href="./new.html">Tin tức</a>
+                  </li>
+                  <li class="navbar_item-link">
+                    <a href="#">Thực đơn</a>
+                  </li>
+                  <li class="navbar_item-link">
+                    <a href="./contact.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>    
+            <div class="logo_mobie">
+              <a href="./home.html">
+                <img src="./image/icon/logo.webp" alt="">
+              </a>
+            </div>
+            <div class="cart cart_mobie">
+                <div class="cart_hotline">
+                  <i>
+                    <a href="./cart.html"><img src="./image/icon/i_cart.webp" alt="Cart">
+                    <span class="cart-accout">0</span></a>
+                  </i>
+                  <p>giỏ hàng</p>
+                </div>
+            </div>
+          </div>
+          <div class="container search-wrap">
+            <div class="search_mobie">
+              <input type="text" placeholder="Tìm kiếm sản phẩm bạn mong muốn">
+              <button><i class="material-icons"> search </i></button>
+            </div>
+          </div> 
+        </div>
+
+        <!-- ========banner========== -->
+        <div class="banner">
+          <img src="./image/banner/banner.webp" alt="">
+        </div>
+
+        <!-- ========category=========== -->
+        <section class="category">
+            <h2>
+              <span>Danh mục sản phấm</span>
+            </h2>
+            <div class=" container swiper mySwiper">
+              <div class=" swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/Category/tra_nong.webp" alt="">
+                  <h1>trà nóng</h1> 
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/Category/tra_hoaqua.webp" alt="">
+                  <h1>trà hoa quả</h1> 
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/Category/tra.webp" alt="">
+                  <h1>Smoothies</h1> 
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/Category/sinh_to.webp" alt="">
+                  <h1>Sinh tố</h1> 
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/Category/banh_ngot.webp" alt="">
+                  <h1>Bánh ngọt</h1> 
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/Category/tra.webp" alt="">
+                  <h1>trà đào</h1> 
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- ==========why========== -->
+        <section class="section_why">
+          <div class="container">
+            <div class="row">
+              <div class="col l-6 c-12">
+                <div class="item1">
+                  <div class="heading">
+                    <h2>
+                      <span>Tại sao chọn chúng tôi</span>
+                    </h2>
+                    <p>Với những nghệ nhân rang tâm huyết và đội ngũ tài năng cùng những câu chuyện trà đầy cảm hứng, ngôi nhà Tea House là không gian dành riêng cho những ai trót yêu say đắm hương vị của những lá trà tuyệt hảo.</p>
+                  </div>
+                  <div class="wrap_item">
+                    <span class="icon">
+                      <img src="./image/icon/icon_why_1.webp" alt="">
+                    </span>
+                    <div class="content">
+                      <span class="content_title">Giá cả phải chăng</span>
+                      <span class="content_service">Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng</span>
+                    </div>
+                  </div>
+                    <div class="wrap_item">
+                    <span>
+                      <img src="./image/icon/icon_why_1.webp" alt="">
+                    </span>
+                    <div class="content">
+                      <span class="content_title">Hương vị tuyệt hảo</span>
+                      <span class="content_service">Những đọt trà được lựa chọn cẩn thận ngay từ lúc đang ngâm mình trong sương</span>
+                    </div>
+                  </div>
+                    <div class="wrap_item">
+                    <span>
+                      <img src="./image/icon/icon_why_1.webp" alt="">
+                    </span>
+                    <div class="content">
+                      <span class="content_title">Sản phẩm tự nhiên</span>
+                      <span class="content_service">Cam kết chỉ cung cấp lá trà có nguồn gốc được kiểm soát chất lượng chặt</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 c-12">
+                <div class="item2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =======product========= -->
+         <section class="product">
+            <div class="container"> 
+                <div class="product_heading">
+                  <h2>
+                      <span>Menu Hôm nay</span>
+                  </h2>
+                </div>
+
+                <div class="product_menu">
+                  <ul>
+                    <li class="product_menu-list active">Trà nóng</li>
+                    <li class="product_menu-list">Trà hoa quả</li>
+                    <li class="product_menu-list">Smoothies</li>
+                    <li class="product_menu-list">Bánh ngọt</li>
+                  </ul>
+                </div>
+
+                <div class="row item active">
+                  <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product1.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="item_product-info">
+                          <div class="name">
+                            <h3>
+                              <a href="#">Trà cam đào</a>
+                            </h3>
+                          </div>
+                          <div class="price">
+                            <span>Giá: </span>40.000đ
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product2.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product3.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6  ">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product4.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3   c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product5.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product6.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product7.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product8.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              
+                </div>
+
+                <div class="row item ">
+                  <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product8.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="item_product-info">
+                          <div class="name">
+                            <h3>
+                              <a href="#">Trà cam đào</a>
+                            </h3>
+                          </div>
+                          <div class="price">
+                            <span>Giá: </span>40.000đ
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product7.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product6.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6  ">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product5.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3   c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product4.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product3.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product2.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product1.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              
+                </div>   
+
+                <div class="row item  ">
+                  <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product9.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="item_product-info">
+                          <div class="name">
+                            <h3>
+                              <a href="#">Trà cam đào</a>
+                            </h3>
+                          </div>
+                          <div class="price">
+                            <span>Giá: </span>40.000đ
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product10.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product11.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6  ">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product12.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row item ">
+                  <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product13.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                        <div class="item_product-info">
+                          <div class="name">
+                            <h3>
+                              <a href="#">Trà cam đào</a>
+                            </h3>
+                          </div>
+                          <div class="price">
+                            <span>Giá: </span>40.000đ
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product14.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3 c-6">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product15.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                    <div class="col l-3  c-6  ">
+                    <div class="item_product ">
+                        <div class="item_product-thumb">
+                          <img src="./image/Product/product16.webp" alt="">
+                          <button class="btn-view">Thêm vào giỏ hàng</button>
+                        </div>
+                    <div class="item_product-info">
+                      <div class="name">
+                        <h3>
+                          <a href="#">Trà cam đào</a>
+                        </h3>
+                      </div>
+                      <div class="price">
+                        <span>Giá: </span>40.000đ
+                      </div>
+                    </div>
+                    </div>
+                  </div>        
+                </div>
+            </div>
+         </section>
+
+          <!-- ========timeone=========== -->
+        <section class="timeopen">
+          <div class="container">
+            <div class="row">
+              <div class="col l-6 c-12">
+                <div class="left_module">
+                  <div class="heading">
+                    <h2>Thời gian mở cửa</h2>
+                  </div>
+                  <div class="content">
+                    <p>“Cà phê nhé" - Một lời hẹn rất riêng của người Việt. Một lời ngỏ mộc mạc để mình ngồi lại bên nhau và sẻ chia câu chuyện của riêng mình</p>
+                    <span>T2 - T6: 8h30 - 21h30</span>
+                    <span>T7 - CN: 8h00 - 22h00</span>
+                    <a href="#">Đặt bàn ngay</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 c-0">
+                <div class="right_module"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- ======feauture=========== -->
+         <section class="feature">
+            <div class="container">
+              <h2>
+                <span>Tin tức nổi bật</span>
+            </h2>
+            <div class="row ">
+                <div class="col l-4 c-12">
+                  <div class="blog_item">
+                    <div class="blog-thumb">
+                      <a href="#">
+                        <img src="./image/blog/blog1.webp" alt="">
+                      </a>
+                    </div>
+                    <div class="blog-content">
+                      <h3>
+                        <a href="#">Nhâm nhi cà phê bao lâu bạn đã tận mắt nhìn kĩ xem hạt cà phê này chưa</a>
+                      </h3>
+                      <div class="post">
+                        <p>Cốc cafe vị đăng đắng, lẫn thêm chút ngọt bùi của sữa đặc sao mà gây nghiện đến thế. Không chỉ cuốn hút ở mùi vị, một cốc cafe sáng còn giúp ngày mới tràn đầy năng lượng với người trẻ, sẵn sàng chưa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l-4 c-12">
+                  <div class="blog_item">
+                    <div class="blog-thumb">
+                      <a href="#">
+                        <img src="./image/blog/blog2.webp" alt="">
+                      </a>
+                    </div>
+                    <div class="blog-content">
+                      <h3>
+                        <a href="#">Uống 1-4 tách cà phê mỗi ngày giúp bệnh nhân ung thư kéo dài sự sống</a>
+                      </h3>
+                      <div class="post">
+                        <p> Uống từ một đến bốn tách cà phê mỗi ngày có thể giúp bệnh nhân ung thư đại trực tràng giai đoạn cuối sống lâu hơn và làm chậm sự tiến triển của bệnh. Phát hiện này được các nhà khoa học rút ra từ ...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l-4 c-12">
+                  <div class="blog_item">
+                    <div class="blog-thumb">
+                      <a href="#">
+                        <img src="./image/blog/blog3.webp" alt="">
+                      </a>
+                    </div>
+                    <div class="blog-content">
+                      <h3>
+                        <a href="#">Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
+                      </h3>
+                      <div class="post">
+                        <p>Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+         </section>
+
+        <!-- =========footer========= -->
+         <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col l-4 c-12">
+                <div class="logo_footer">
+                  <a href="#">
+                    <img src="./image/icon/logo.webp" alt="">
+                  </a>
+                </div>
+                <p class="sum_footer">Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi người xích lại gần nhau và tìm thấy niềm vui, sự sẻ chia thân tình bên những tách cà phê đượm hương, chất lượng.</p>
+                <div class="social">
+                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                 <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col l-4 c-12">
+                <h4 class="title-menu">LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                <div class="contact">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>
+                    <b>Địa chỉ: </b>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội
+                  </span>
+                </div>
+                <div class="contact">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>
+                    <b>Hotline đặt bàn: </b>
+                    <a href="#">1900 1080</a>
+                  </span>
+                   <!-- <span>
+                    <b>Hotline giao hàng: </b>
+                    <a href="#">1900 6750</a>
+                  </span> -->
+                </div>
+              </div>
+              <div class="col l-4 c-12">
+                  <h4 class="title-menu">ĐĂNG KÝ NHẬN KHUYẾN MÃI</h4>
+                  <div class="time_work">
+                    <p>Đừng bỏ lỡ những sản phẩm và chương trình khuyến mãi hấp dẫn</p>
+                    <form>
+                      <div class="input-group">
+                        <input type="text" placeholder="Email của bạn">
+                        <button>Đăng ký</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+             <div class="border_footer">
+              </div>
+              <div class="copyright">
+                <span>@ Bản quyền thuộc về</span>
+                <a href="https://www.facebook.com/">Quang Huy</a>
+              </div>
+          </div>
+
+         
+        
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

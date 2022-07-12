@@ -1,0 +1,509 @@
+// @import "variable";
+// @import "reset";
+@keyframes showNavbar {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+//========== header-top===========
+.header_top {
+  max-width: 100%;
+  background-color: $green;
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+
+    .hotline {
+      display: flex;
+      height: 100%;
+
+      i {
+        margin-right: 5px;
+        width: 18px;
+        height: 18px;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+        border: 0 none;
+      }
+
+      p,
+      a {
+        font-family: "Quicksand", sans-serif;
+        color: $light;
+        font-size: 14px;
+      }
+    }
+
+    .cartsearch {
+      display: flex;
+      align-items: center;
+      float: right;
+      text-align: right;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: $light;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .search {
+        position: relative;
+        &:hover form {
+          display: flex;
+        }
+        i {
+          height: 18px;
+          width: 18px;
+        }
+
+        form {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          background-color: $light;
+          padding: 0 20px 0 10px;
+          width: 220px;
+          height: 35px;
+          margin: auto;
+          border-radius: 20px;
+          top: -40%;
+          right: 0;
+          display: none;
+
+          input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 5px 7px;
+            background: transparent;
+            z-index: 999;
+          }
+
+          button {
+            display: flex;
+            border: none;
+            outline: none;
+            height: 45px;
+            width: 45px;
+            align-items: center;
+            background-color: transparent;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .acccout {
+        margin: 0 30px;
+
+        &:hover .acccout-group {
+          display: block;
+        }
+
+        i {
+          height: 18px;
+          width: 21px;
+        }
+
+        .acccout-group {
+          display: block;
+          text-align: left;
+          width: 110px;
+          position: absolute;
+          top: 45px;
+          background: $white;
+          padding: 10px;
+          z-index: 9999;
+          box-shadow: 0 0 15px -5px rgb(0 0 0 / 40%);
+          border-radius: 3px;
+          display: none;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 48px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 5px 5px 5px;
+            border-color: transparent transparent $light transparent;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -12px;
+            width: 80px;
+            height: 20px;
+            border-width: 0 5px 5px 5px;
+            border-color: transparent transparent $light transparent;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            line-height: 25px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $dark;
+
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+
+      .cart_hotline {
+        display: flex;
+        align-items: center;
+        color: $light;
+        font-size: 14px;
+
+        i {
+          position: relative;
+          margin-right: 10px;
+          cursor: pointer;
+
+          span {
+            position: absolute;
+            background: $light;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            left: 15px;
+            bottom: -9px;
+            text-decoration: none;
+            text-transform: none;
+            font-style: initial;
+            font-size: 11px;
+            color: $green;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =========header-bottom=========
+.header_bottom {
+  .menu {
+    display: none;
+  }
+
+  .bottombar {
+    height: 125px;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 125px;
+
+      .login_mobie {
+        display: none;
+      }
+
+      .cart_mobie {
+        display: none;
+      }
+
+      .search_mobie {
+        display: none;
+      }
+
+      ul {
+        display: inline-block;
+        position: relative;
+
+        li {
+          display: inline-block;
+          height: 100%;
+          position: relative;
+          margin-right: 30px;
+
+          &:hover .item-small {
+            display: block;
+          }
+
+          a {
+            display: inline-flex;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $dark;
+            font-family: "Quicksand", sans-serif;
+
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+
+      .item_list::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0px;
+        width: 100%;
+        height: 40px;
+        border-width: 0 5px 5px 10px;
+        border-color: transparent transparent $light transparent;
+      }
+
+      .item-small {
+        position: absolute;
+        display: block;
+        top: 40px;
+        left: 0;
+        width: 170px;
+        background-color: $light;
+        display: none;
+
+        li {
+          padding: 0 10px;
+
+          .item-small_link {
+            width: 100%;
+            font-size: 1.4rem;
+            line-height: 25px;
+            padding: 7px 5px 7px 4px;
+            font-weight: 400;
+
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo_mobie {
+    display: none;
+  }
+
+  .cart_mobie,
+  .search_mobie {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    .header_top {
+      display: none;
+    }
+
+    .header_bottom {
+      .bottom_mobie {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        background-color: $dark;
+        padding: 0 20px;
+
+        .menu {
+          display: block;
+          color: $light;
+        }
+
+        .bottombar {
+          .navbar {
+            display: block;
+            background-color: $light;
+            width: 0%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            z-index: 10;
+            display: none;
+            animation: showNavbar ease-in 0.3s;
+
+            .login_mobie {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 20px 0px 10px;
+              padding: 0 10px;
+              font-size: 18px;
+
+              div {
+                padding-left: 10px;
+                a {
+                  color: $dark;
+                  span {
+                    position: relative;
+                    font-size: 15px;
+                    font-weight: 700;
+                    font-family: "Quicksand", sans-serif;
+                  }
+                }
+              }
+            }
+
+            .logo {
+              display: none;
+              margin: 0;
+              padding: 0;
+
+              img {
+                width: 100px;
+                height: auto;
+              }
+            }
+
+            .navbar_item {
+              display: block;
+
+              .navbar_item-link {
+                display: block;
+                width: 100%;
+                padding: 12px 20px;
+                border-top: 1px solid #afb9bb;
+
+                a {
+                  display: block;
+                  font-weight: 500;
+
+                  .material-icons {
+                    display: none;
+                  }
+                }
+
+                .item-small {
+                  top: 10px;
+                  position: relative;
+                  width: 100%;
+                  display: none;
+
+                  li {
+                    display: block;
+                    width: 100%;
+
+                    a {
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+
+              .logo {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .navbar.active {
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .logo_mobie {
+          display: flex;
+          align-items: center;
+          width: 110px;
+          height: 100%;
+          img {
+            object-fit: center;
+          }
+        }
+
+        .cart_mobie {
+          display: block;
+
+          i {
+            position: relative;
+          }
+          span {
+            position: absolute;
+            background: $light;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            right: -7px;
+            bottom: -6px;
+            text-decoration: none;
+            text-transform: none;
+            font-style: initial;
+            font-size: 11px;
+            color: $green;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .search-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background-color: $dark;
+      .search_mobie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $light;
+        height: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        margin: 20px 0px;
+
+        input {
+          height: 100%;
+          padding: 0 10px;
+          flex: 1;
+          background-color: transparent;
+          border: none;
+          outline: none;
+        }
+        button {
+          position: relative;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: $dark;
+          top: 50%;
+          padding: 0 5px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

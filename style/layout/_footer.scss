@@ -1,0 +1,211 @@
+footer {
+  background-image: url(https://bizweb.dktcdn.net/100/415/010/themes/844269/assets/bg_footer.jpg?1646286260817);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 95px 0 0 0;
+
+  .container {
+    .row {
+      .sum_footer {
+        color: $light;
+        font-size: 16px;
+        margin: 27px 0 15px;
+      }
+
+      .social {
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          text-align: center;
+          margin-right: 8px;
+          font-size: 16px;
+          margin-top: 0px;
+          color: $green;
+          // background: transparent;
+        }
+      }
+
+      .title-menu {
+        font-family: "Quicksand", sans-serif;
+        margin: 0;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+        position: relative;
+        text-transform: uppercase;
+        color: $green;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        display: block;
+      }
+
+      .contact {
+        margin-bottom: 15px;
+        padding: 0;
+        i {
+          height: 25px;
+          width: 25px;
+          font-size: 20px;
+          float: left;
+          margin-top: 3px;
+          color: $green;
+        }
+
+        span {
+          display: block;
+          font-size: 15px;
+          font-weight: 500;
+          color: $light;
+          font-family: "Quicksand", sans-serif;
+          margin-left: 10px;
+          line-height: 25px;
+
+          b,
+          a {
+            color: $light;
+          }
+        }
+      }
+
+      .time_work {
+        p {
+          color: $light;
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        .input-group {
+          position: relative;
+          display: flex;
+          height: 60px;
+          background-color: $green;
+          border-radius: 30px;
+          overflow: hidden;
+
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0 160px 0 20px;
+          }
+
+          button {
+            font-weight: bold;
+            font-size: 16px;
+            height: 100%;
+            border-radius: 30px !important;
+            background-color: $green;
+            color: $light;
+            min-width: 151px;
+            text-transform: uppercase;
+            margin-left: -150px !important;
+            z-index: 9 !important;
+            border: none;
+            outline: none;
+            &:hover {
+              background-color: var(--dark);
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0 20px 0;
+      color: $light;
+
+      span {
+        font-size: 15px;
+      }
+
+      a {
+        color: $green;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 0 4px;
+      }
+    }
+
+    .border_footer {
+      border-bottom: 1px solid #dbcfcf;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    footer {
+      padding: 30px 0 0 0;
+      .container {
+        display: block;
+        .row {
+          margin: 0;
+          .col {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+          .c-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            span,
+            p {
+              font-size: 11px;
+              font-weight: 400;
+            }
+
+            .social {
+              margin-bottom: 30px;
+            }
+
+            .sum_footer {
+              font-weight: 400;
+              line-height: 25px;
+            }
+
+            .title-menu {
+              margin-bottom: 10px;
+              margin-top: 0px;
+              padding-top: 0px;
+              font-size: 14px;
+            }
+
+            .contact {
+              i {
+                height: 25px;
+                width: 30px;
+                font-size: 16px;
+                float: left;
+                margin-top: 5px;
+              }
+            }
+
+            .input-group {
+              height: 50px;
+            }
+          }
+        }
+        .copyright {
+          span,
+          a {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+        .border_footer {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}

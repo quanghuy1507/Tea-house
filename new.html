@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./image/icon/logo2.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Trang chủ</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header_top">
+          <div class="container">
+            <div class="row topbar">
+              <div class="col l-6">
+                <div class="hotline">
+                  <i>
+                    <img src="./image/icon/i_phone.webp" alt="" />
+                  </i>
+                  <p>Hotline: <a href="#">0328543458</a></p>
+                </div>
+              </div>
+              <div class="col l-6">
+                <div class="cartsearch">
+                  <div class="search">
+                    <span>
+                      <i><img src="./image/icon/i_search.webp" alt="Search" /></i>
+                      Tìm kiếm
+                    </span>
+                    <form action="search" class="search_box">
+                      <input type="text" placeholder="Tìm kiếm" />
+                      <button><i class="material-icons"> search </i></button>
+                    </form>
+                    </form>
+                  </div>
+                  <div class="acccout">
+                    <span>
+                      <i><img src="./image/icon/i_user.webp" alt="Accout"></i>
+                      Tài khoản
+                    </span>
+                    <div class="acccout-group">
+                      <a href="./login.html">Đăng nhập</a>
+                      <a href="./register.html">Đăng kí</a>
+                    </div>
+                  </div>
+                  <div class="cart">
+                    <div class="cart_hotline">
+                      
+                      <i>
+                        <a href="./cart.html"><img src="./image/icon/i_cart.webp" alt="Cart">
+                        <span class="cart-accout">0</span></a>
+                      </i>
+                      Giỏ hàng
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header_bottom">
+          <div class="container bottom_mobie">
+            <div class="menu"> <i class="material-icons"> menu </i></div>
+            <div class="bottombar">
+              <nav class="navbar">
+                <div class="login_mobie">
+                  <div>
+                    <a href="./register.html">
+                      <span>Đăng kí</span>
+                    </a>
+                    &nbsp;/
+                    <a href="./login.html">
+                      <span>Đăng nhập</span>
+                    </a>
+                  </div>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navbar_item">
+                  <li class="navbar_item-link">
+                    <a href="./home.html">Trang chủ</a>
+                  </li>
+                  <li  class="navbar_item-link">
+                    <a href="./introduce.html">Giới thiệu</a>
+                  </li>
+                  <li class="item_list navbar_item-link">
+                    <a href="#">Sản phẩm 
+                      <i class="material-icons"> arrow_drop_down</i>
+                      <!-- <i class="fa-light fa-plus"></i> -->
+                    </a>
+                    <ul class="item-small">
+                      <li>
+                        <a class="item-small_link" href="#">Cà phê</a>
+                      </li>
+                      <li>
+                        <a  class="item-small_link" href="#">Bánh ngọt</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Smoothies</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Trà hoa quả</a>
+                      </li>
+                      <li>
+                        <a class="item-small_link" href="#">Sinh tố</a>
+                      </li>
+                    </ul>   
+                  </li>
+                </ul>
+                <ul class="logo">
+                  <li>
+                    <a href="home.html">
+                      <img src="./image/icon/logo.webp" alt="">
+                    </a>
+                  </li>
+                </ul>
+                <ul  class="navbar_item">
+                  <li class="navbar_item-link  rr">
+                    <a href="./new.html">Tin tức</a>
+                  </li>
+                  <li class="navbar_item-link">
+                    <a href="#">Thực đơn</a>
+                  </li>
+                  <li class="navbar_item-link">
+                    <a href="./contact.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>    
+            <div class="logo_mobie">
+              <a href="./home.html">
+
+                <img src="./image/icon/logo.webp" alt="">
+              </a>
+            </div>
+            <div class="cart cart_mobie">
+                <div class="cart_hotline">
+                  <i>
+                    <a href="./cart.html"><img src="./image/icon/i_cart.webp" alt="Cart">
+                    <span class="cart-accout">0</span></a>
+                  </i>
+                  <p>giỏ hàng</p>
+                </div>
+            </div>
+          </div>
+          <div class="container search-wrap">
+            <div class="search_mobie">
+              <input type="text" placeholder="Tìm kiếm sản phẩm bạn mong muốn">
+              <button><i class="material-icons"> search </i></button>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="container news">
+        <ul>
+            <li>
+                <a href="./index.html">Trang chủ</a>
+                <span class="mr_lr">&nbsp;/&nbsp;</span>
+            </li>
+            <li>
+                <strong>
+                    <span>Tin tức</span>
+                </strong>
+            </li>
+        </ul>
+        <div class="blog">
+           <div class="row">
+              <div class="col l-9 c-12">
+                  <div class="row">
+                      <div class="col l-6 c-12">
+                          <div class="blog_item">
+                              <div class="thumb">
+                                  <a href="#">
+                                      <img src="./image/blog/blog1.webp" alt="">
+                                  </a>
+                              </div>
+                              <div class="content">
+                                  <h3>Nhâm nhi cà phê bao lâu nhưng bạn tận mắt nhìn kỹ xem hạt cà phê chưa?</h3>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col l-6 c-12">
+                          <div class="blog_item">
+                              <div class="thumb">
+                                  <a href="#">
+                                      <img src="./image/blog/blog2.webp" alt="">
+                                  </a>
+                              </div>
+                              <div class="content">
+                                  <h3>Uống 1-4 tách cà phê mỗi ngày giúp bệnh nhân ung thư kéo dài sự sống</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col l-6 c-12">
+                        <div class="blog_item-small">
+                          <a href="#">
+                            <img src="./image/blog/blog3.webp" alt="">
+                          </a>
+                          <div class="content-small">
+                            <h3>
+                              <a href="/dung-coc-giay-dung-ca-phe-nong-thu-ban-uong-se-khong-chi-la-cafein-ma-con-day-ap-nhung-thu-dang-so-nay" title="Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này">Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
+                            </h3>
+                            <p>Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng.</p>
+                          </div>
+                        </div>
+                    </div>
+                     <div class="col l-6 c-12">
+                        <div class="blog_item-small">
+                          <a href="#">
+                            <img src="./image/blog/blog4.webp" alt="">
+                          </a>
+                          <div class="content-small">
+                            <h3>
+                              <a href="/dung-coc-giay-dung-ca-phe-nong-thu-ban-uong-se-khong-chi-la-cafein-ma-con-day-ap-nhung-thu-dang-so-nay" title="Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này">Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
+                            </h3>
+                            <p>Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng.</p>
+                          </div>
+                        </div>
+                    </div>
+                     <div class="col l-6 c-12">
+                        <div class="blog_item-small">
+                          <a href="#">
+                            <img src="./image/blog/blog5.webp" alt="">
+                          </a>
+                          <div class="content-small">
+                            <h3>
+                              <a href="/dung-coc-giay-dung-ca-phe-nong-thu-ban-uong-se-khong-chi-la-cafein-ma-con-day-ap-nhung-thu-dang-so-nay" title="Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này">Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
+                            </h3>
+                            <p>Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng.</p>
+                          </div>
+                        </div>
+                    </div>
+                     <div class="col l-6 c-12">
+                        <div class="blog_item-small">
+                          <a href="#">
+                            <img src="./image/blog/blog6.webp" alt="">
+                          </a>
+                          <div class="content-small">
+                            <h3>
+                              <a href="/dung-coc-giay-dung-ca-phe-nong-thu-ban-uong-se-khong-chi-la-cafein-ma-con-day-ap-nhung-thu-dang-so-nay" title="Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này">Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
+                            </h3>
+                            <p>Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng.</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col l-3 c-12">
+                  <div class="sidebar-category">
+                    <div class="sidebar-title">
+                      <h2>Danh mục tin tức</h2>
+                    </div>
+                    <div class="sidebar-content">
+                      <nav>
+                        <ul>
+                          <li>
+                            <a href="#">Trang chủ</a>
+                          </li>
+                           <li>
+                            <a href="#">Giới thiệu</a>
+                          </li>
+                           <li>
+                            <a href="#">Sản phẩm</a>
+                          </li>
+                           <li>
+                            <a href="#">Tin tức</a>
+                          </li>
+                           <li>
+                            <a href="#">Thực đơn</a>
+                          </li>
+                           <li>
+                            <a href="#">Liên hệ</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="sidebar-about">
+                     <div class="sidebar-title">
+                        <h2>Về chúng tôi</h2>
+                     </div>
+                     <div class="sidebar-content">
+                         <a href="#">
+                           <img src="./image/blog/blog3.webp" alt="">
+                         </a>
+                         <div class="about_sum">
+                            <p>Tea House được sinh ra từ niềm đam mê bất tận với lá trà Việt Nam. Chúng tôi đã không ngừng mang đến những sản phẩm trà thơm ngon, sánh đượm trong không gian thoải mái và lịch sự với mức giá hợp lý. </p>
+                            <a href="#">Đọc tiếp</a>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="sidebar-picture">
+                     <div class="sidebar-title">
+                        <h2>Danh mục tin tức</h2>
+                     </div>
+                     <div class="row">
+                        <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog3.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog4.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog5.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog6.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                         <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog5.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                         <div class="col l-4 c-6">
+                          <div class="item-img">
+                            <a href="#">
+                              <img src="./image/blog/blog1.webp" alt="">
+                            </a>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+       
+
+      
+        <!-- =========footer========= -->
+         <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col l-4 c-12">
+                <div class="logo_footer">
+                  <a href="#">
+                    <img src="./image/icon/logo.webp" alt="">
+                  </a>
+                </div>
+                <p class="sum_footer">Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi người xích lại gần nhau và tìm thấy niềm vui, sự sẻ chia thân tình bên những tách cà phê đượm hương, chất lượng.</p>
+                <div class="social">
+                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                 <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="col l-4 c-12">
+                <h4 class="title-menu">LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                <div class="contact">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>
+                    <b>Địa chỉ: </b>235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội
+                  </span>
+                </div>
+                <div class="contact">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>
+                    <b>Hotline đặt bàn: </b>
+                    <a href="#">1900 1080</a>
+                  </span>
+                   <!-- <span>
+                    <b>Hotline giao hàng: </b>
+                    <a href="#">1900 6750</a>
+                  </span> -->
+                </div>
+              </div>
+              <div class="col l-4 c-12">
+                  <h4 class="title-menu">ĐĂNG KÝ NHẬN KHUYẾN MÃI</h4>
+                  <div class="time_work">
+                    <p>Đừng bỏ lỡ những sản phẩm và chương trình khuyến mãi hấp dẫn</p>
+                    <form>
+                      <div class="input-group">
+                        <input type="text" placeholder="Email của bạn">
+                        <button>Đăng ký</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+             <div class="border_footer">
+              </div>
+              <div class="copyright">
+                <span>@ Bản quyền thuộc về</span>
+                <a href="https://www.facebook.com/">Quang Huy</a>
+              </div>
+          </div>
+
+         
+        
+        </footer>
+
+    </div>
+    <script src="./js/main.js"></script>
+
+  </body>
+</html>
